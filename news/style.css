@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-background: #ffeff4;
+    --main-text-color: black;
+    --blur-color: #a0a4a8;
+    --navbar-size: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blur-color)
+}
+
+.fake-navbar {
+    width: var(--navbar-size);
+    height: 100%;
+}
+
+html,
+body {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: var(--main-background);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--main-text-color);
+    display: flex
+}
+
+.navbar {
+    position: fixed;
+    max-width: var(--navbar-size);
+    width: var(--navbar-size);
+    height: 100%;
+    background-color: white;
+    display: block;
+    padding-top: 50px;
+}
+
+.navbar .menu {
+    position: relative;
+    margin-left: 25px;
+}
+
+.navbar .menu .menu_text {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.navbar .menu .items {
+    margin-left: 10px;
+}
+
+.navbar .menu .items .item {
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.navbar .menu .items .current p a{
+    color: #f54777 !important;
+    font-weight: 700;
+}
+
+.navbar .menu .item .icon {
+    margin-right: 10px;
+}
+
+.interaction_area{
+    flex:1;
+    padding-inline: 30px;
+    padding-top: 20px;
+}
+
+.interaction_area .news_container > .text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.interaction_area .news_area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.interaction_area .news_area .news {
+    max-height: 300px;
+    max-width: 300px;
+    cursor: pointer;
+    margin: 0 30px;
+    margin-bottom: 30px;    
+}
+
+.interaction_area .news_area .news img {
+    max-width: 300px;
+    width: 300px;
+    min-width: 300px;
+    padding-bottom: 20px;
+}
+
+.interaction_area .news_area .news .text .heading {
+    font-weight: bold;
+}
+
+.interaction_area .news_area .news .text .time {
+    color: var(--blur-color)
+}

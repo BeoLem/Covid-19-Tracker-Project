@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam - Covid-19 Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="menu">
+            <p class="menu_text">DANH MỤC</p>
+
+            <div class="items">
+                <div class="item">
+                    <p><a href="../"><i class="fa-solid fa-house icon"></i>Tổng quan</a></p>
+                </div>
+                <div class="item current">
+                    <p><a href="./compare/"><i class="fa-solid fa-greater-than-equal icon"></i>So sánh</a></p>
+                </div>
+                <div class="item">
+                    <p><a href="../ranking/"><i class="fa-solid fa-ranking-star icon"></i>Bảng xếp hạng</a></p>
+                </div>
+                <div class="item">
+                    <p><a href="../news"><i class="fa-solid fa-newspaper icon"></i>Tin tức</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <p class="menu_text">KHÁC</p>
+
+            <div class="items">
+                <div class="item">
+                    <p><a href="../about/index.html"><i class="fa-solid fa-info-circle icon"></i>Giới thiệu</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fake-navbar"></div>
+
+    <div class="interaction_area">
+        <h1 class="heading">
+            So sánh Covid-19
+        </h1>
+
+        <div class="container">
+            <div class="first_country vietnam">
+                <p class="country_text">
+                    Quốc gia: Việt Nam
+                </p>
+
+                <div class="overview_cases">
+                    <div class="totalcases infoBox">
+                        <p class="heading" id="total_cases_heading">Tổng số ca nhiễm
+                        </p>
+                        <p class="number" id="total_cases_number_first">Loading...</p>
+                    </div>
+
+                    <div class="deathcases infoBox">
+                        <p class="heading" id="death_cases_heading">Số ca đã tử vong</p>
+                        <p class="number" id="death_cases_number_first">Loading...</p>
+                    </div>
+
+                    <div class="recoveredcases infoBox">
+                        <p class="heading" id="recovered_cases_heading">Số ca đã phục hồi</p>
+                        <p class="number" id="recovered_cases_number_first">Loading...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dash"></div>
+
+            <div class="second_country">
+                <form action="" onsubmit="">
+                    <label for="countries">Quốc gia: </label>
+                    <select name="countries" id="countries">
+                        <option value="choose" disabled="" selected="">Chọn một quốc gia</option>
+                    </select>
+                    <br><br>
+                    <input type="button" class="submit_btn" id="form_submit_button" value="So sánh" style="padding: 0 5px">
+                </form>
+
+                <div class="overview_cases">
+                    <div class="totalcases infoBox">
+                        <p class="heading" id="total_cases_heading">Tổng số ca nhiễm
+                        </p>
+                        <p class="number" id="total_cases_number_second">Loading...</p>
+                    </div>
+
+                    <div class="deathcases infoBox">
+                        <p class="heading" id="death_cases_heading">Số ca đã tử vong</p>
+                        <p class="number" id="death_cases_number_second">Loading...</p>
+                    </div>
+
+                    <div class="recoveredcases infoBox">
+                        <p class="heading" id="recovered_cases_heading">Số ca đã phục hồi</p>
+                        <p class="number" id="recovered_cases_number_second">Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to JS Code -->
+    <script src="https://kit.fontawesome.com/dd4ab22b06.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

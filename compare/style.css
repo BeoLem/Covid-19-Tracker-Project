@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-background: #ffeff4;
+    --main-text-color: black;
+    --blur-color: #a0a4a8;
+    --navbar-size: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blur-color)
+}
+
+.fake-navbar {
+    width: var(--navbar-size);
+    height: 100%;
+}
+
+.dash {
+    width: 100%;
+    height: 1px;
+    background-color: #a0a4a8;
+    margin: 10px 0;
+}
+
+html,
+body {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: var(--main-background);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--main-text-color);
+    display: flex
+}
+
+.navbar {
+    position: fixed;
+    max-width: var(--navbar-size);
+    width: var(--navbar-size);
+    height: 100%;
+    background-color: white;
+    display: block;
+    padding-top: 50px;
+}
+
+.navbar .menu {
+    position: relative;
+    top: 0px;
+    margin-left: 25px;
+}
+
+.navbar .menu .menu_text {
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.navbar .menu .items {
+    margin-left: 10px;
+}
+
+.navbar .menu .items .item {
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.navbar .menu .items .current p a{
+    color: #f54777 !important;
+    font-weight: 700;
+}
+
+.navbar .menu .item .icon {
+    margin-right: 10px;
+}
+
+.interaction_area{
+    flex:1;
+    padding-inline: 30px;
+    padding-top: 20px;
+}
+
+h1.heading {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.interaction_area .overview_cases {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.interaction_area .overview_cases .infoBox {
+    border-radius: 10px;
+    max-height: 100px;
+    width: auto;
+    padding: 20px;
+    /* margin-right: 75px; */
+}
+
+.interaction_area .overview_cases .totalcases {
+    background-color: #edf2f7;
+}
+
+.interaction_area .overview_cases .totalcases .heading,
+.interaction_area .overview_cases .totalcases .number {
+    color: blue !important
+}
+
+.interaction_area .overview_cases .deathcases {
+    background-color: #fed7d7;
+}
+
+.interaction_area .overview_cases .deathcases .heading,
+.interaction_area .overview_cases .deathcases .number {
+    color: red !important
+}
+
+.interaction_area .overview_cases .recoveredcases {
+    background-color: #c6f6d5;
+}
+
+.interaction_area .overview_cases .recoveredcases .heading,
+.interaction_area .overview_cases .recoveredcases .number {
+    color: green !important
+}
+
+.interaction_area .overview_cases .infoBox .heading {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+.interaction_area .overview_cases .infoBox .number {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+form label {
+    margin-right: 10px;
+}
+
+form select {
+    margin-right: 10px;
+}
